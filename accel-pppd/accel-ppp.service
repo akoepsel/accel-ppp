@@ -1,0 +1,12 @@
+[Unit]
+Description=accel-ppp service
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/sysconfig/accel-pppd
+ExecStart=/usr/sbin/accel-pppd $ACCEL_PPPD_ARGS
+
+[Install]
+WantedBy=multi-user.target

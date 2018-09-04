@@ -1,0 +1,4 @@
+# environment file for systemd accel-ppp.service
+#
+#
+ACCEL_PPPD_ARGS="-c /etc/accel-ppp.conf"
